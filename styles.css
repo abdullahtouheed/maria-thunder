@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 60px; /* Reduced height */
+}
+
+nav .logo img {
+    height: 50px; /* Adjust the size of the logo as needed */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Centering the navigation links */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.photos-section .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos-section .photo img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.updates-section .update {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav .logo img {
+        height: 40px; /* Adjust logo height for smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 24px; /* Decrease heading size for smaller screens */
+    }
+
+    .photos-section .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .photos-section .photo img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    nav .logo img {
+        height: 30px; /* Further reduce logo height for very small screens */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Reduce font size more for very small screens */
+    }
+}
